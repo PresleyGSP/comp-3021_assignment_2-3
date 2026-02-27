@@ -15,7 +15,7 @@ public class VulnerableApp {
 
     public static String getUserInput() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter your name: ");
+        System.out.print("Enter your name please: ");
         return scanner.nextLine();
     }
 
@@ -70,4 +70,5 @@ public class VulnerableApp {
         saveToDb(data);
         sendEmail("admin@example.com", "User Input", userInput);
     }
+
 }
